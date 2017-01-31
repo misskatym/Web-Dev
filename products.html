@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Movie Props</title>
+<link href="styles.css" type="text/css" rel="stylesheet">
+<link rel="icon" type="image/png" href="favicon.png">
+<script type="text/javascript" src="index.js"></script>
+
+</head>
+
+<body onLoad = "initialize()">
+
+<div id="nav">
+<ul>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="about.html">About Us</a></li>
+	<li><a href="products.html">Products</a></li>
+	<li><a href="registration.html">Register Here</a></li>
+	<li><a href="admin.html">Admin</a></li>
+</ul>
+</div>
+
+<div id="main">
+
+<form name = "myForm">
+<img src = "blank.gif"
+     name = "imgDisplay"
+     height = 250
+     width = 250>
+<br>
+
+<input type = "text"
+       name = "txtDescription"
+       value = "blank">
+<br>
+<input type = "button"
+       value = "next"
+       onClick = "upDate()">
+
+<div class="gallery" align="center">
+
+<div class="thumbnails">
+	<img onmouseover="preview.src=img1.src" name="img1" src="images/mask.jpg" alt="" width="120px"/>
+	<img onmouseover="preview.src=img2.src" name="img2" src="images/broom.jpg" alt="" width="120px"/>
+	<img onmouseover="preview.src=img3.src" name="img3" src="images/hair.png" alt="" width="120px"/>
+	<img onmouseover="preview.src=img4.src" name="img4" src="images/boat.png" alt="" width="120px"/>
+	<img onmouseover="preview.src=img5.src" name="img5" src="images/umbrella.jpg" alt="" width="120px"/>
+</div>
+
+<div class="preview" align="center">
+	<img name="preview" src="images/img1.jpg" alt="" width="400px"/>
+</div>
+
+</div> 
+
+
+</div>
+
+</body>
+
+</html>
